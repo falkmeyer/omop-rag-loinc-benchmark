@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+figures/figure1.png
+figures/figure1.pdf

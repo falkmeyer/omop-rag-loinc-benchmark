@@ -1,0 +1,6 @@
+[submodule "external/rag-pipeline"]
+	path = external/rag-pipeline
+	url = https://github.com/tommccaughey/bachelor-thesis-rag-pipeline.git
+[submodule "external/evaluation"]
+	path = external/evaluation
+	url = https://github.com/tommccaughey/bachelor-thesis-evaluation.git
