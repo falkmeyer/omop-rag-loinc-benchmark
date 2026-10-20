@@ -2,7 +2,7 @@
 
 Code and analysis accompanying the paper
 
-> Meyer-Eschenbach F\*, McCaughey T\*, Kohler S, Wieler L, Näher AF. *Beyond String Matching: Benchmarking a
+> Meyer-Eschenbach F\*, McCaughey T\*, Kohler S, Näher AF. *Beyond String Matching: Benchmarking a
 > Retrieve-and-Rerank LLM Pipeline Against OHDSI Usagi for LOINC Mapping.* Submitted to MIE 2027.
 > (\*shared first authorship)
 
