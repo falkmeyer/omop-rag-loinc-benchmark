@@ -10,11 +10,14 @@ The study maps the 753 laboratory items of the MIMIC-III `D_LABITEMS` dictionary
 Standardized Vocabularies and compares a two-stage pipeline (Vertex AI `text-embedding-005` retrieval of five
 candidates + Gemini 2.0 Flash reranking) against OHDSI Usagi, at three nested evaluation levels:
 
-| Level | Match criterion between prediction *c* and reference code *y* |
-|-------|----------------------------------------------------------------|
-| L1    | *c* = *y*                                                      |
-| L2    | L1 or *c* is a direct parent of *y*                            |
-| L3    | L2 or *c* and *y* share a direct parent (siblings)             |
+Three predictions ŷ are evaluated per item: Usagi (ŷ_Usagi), retrieval alone (ŷ_Ret) and the full pipeline
+after reranking (ŷ_RAG).
+
+| Level | Condition between prediction ŷ and reference code y |
+|-------|------------------------------------------------------|
+| L1    | ŷ = y                                                |
+| L2    | L1, or ŷ is the direct parent of y                   |
+| L3    | L2, or ŷ and y share a direct parent (siblings)      |
 
 Parents come from the LOINC multiaxial hierarchy (LOINC 2.82).
 

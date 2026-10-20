@@ -81,6 +81,7 @@ def mcnemar(a, b):
 pct = lambda k, n: f"{k} ({100 * k / n:.1f}%)"
 out = {}
 print(f"Pipeline items with reference: {len(IDS)}; Usagi items: {len(UIDS)}; reranked: {sum(i in rr.index for i in IDS)}")
+missing = [i for i in GT.index if not any(p for p in [PAR.get(GT[i])])]
 print(f"reference codes without hierarchy entry: {sum(GT[i] not in PAR for i in GT.index)}")
 
 # composition of retrieved candidates
